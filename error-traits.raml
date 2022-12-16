@@ -19,8 +19,8 @@ responses:
   404:
     body:
       application/json:
-        example: |
-          {"errorMessage":"Not Found", "errorCode":"404"}
+        type: !include types/error-type.raml
+        examples: !include examples/404-example.raml 
   500:
     body:
       application/json:
