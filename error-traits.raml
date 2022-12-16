@@ -6,11 +6,16 @@ responses:
       application/json:
         type: !include types/error-type.raml
         examples: !include examples/400-example.raml 
+  401:
+    body:
+      application/json:
+        type: !include types/error-type.raml
+        examples: !include examples/403-example.raml 
   403:
     body:
       application/json:
         type: !include types/error-type.raml
-        examples: !include examples/400-example.raml 
+        examples: !include examples/403-example.raml 
   404:
     body:
       application/json:
