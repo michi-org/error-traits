@@ -24,8 +24,8 @@ responses:
   500:
     body:
       application/json:
-        example: |
-          {"errorMessage":"Internal Server Error", "errorCode":"500"}
+        type: !include types/error-type.raml
+        examples: !include examples/500-example.raml 
   503:
     body:
       application/json:
