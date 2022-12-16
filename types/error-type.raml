@@ -1,6 +1,9 @@
 #%RAML 1.0 DataType
 properties:
-  transactionI
+  correlationId:
+    type: string
+    required: false
+    example: 123e4567-e89b-12d3-a456-426655440000
   statusCode:
     type: number
     required: true
