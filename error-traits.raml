@@ -10,7 +10,7 @@ responses:
     body:
       application/json:
         type: !include types/error-type.raml
-        examples: !include examples/403-example.raml 
+        examples: !include examples/400-example.raml 
   403:
     body:
       application/json:
@@ -21,11 +21,6 @@ responses:
       application/json:
         example: |
           {"errorMessage":"Not Found", "errorCode":"404"}
-  401:
-    body:
-      application/json:
-        type: !include types/error-type.raml
-        examples: !include examples/401-example.raml 
   500:
     body:
       application/json:
