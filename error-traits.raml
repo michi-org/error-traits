@@ -29,3 +29,5 @@ responses:
   503:
     body:
       application/json:
+        type: !include types/error-type.raml
+        examples: !include examples/503-example.raml 
