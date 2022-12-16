@@ -14,8 +14,8 @@ responses:
   401:
     body:
       application/json:
-        example: |
-          {"errorMessage":"Unauthorized", "errorCode":"401"}
+        type: !include type
+        examples: !include examples/401-example.raml 
   500:
     body:
       application/json:
