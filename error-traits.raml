@@ -20,7 +20,12 @@ responses:
     body:
       application/json:
         type: !include types/error-type.raml
-        examples: !include examples/404-example.raml 
+        examples: !include examples/404-example.raml
+  429:
+    body:
+      application/json:
+        type: !include types/error-type.raml
+        examples: !include examples/429-example.raml 
   500:
     body:
       application/json:
